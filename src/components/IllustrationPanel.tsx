@@ -14,7 +14,7 @@ export default function IllustrationPanel() {
   useEffect(() => {
     const slideshowTimer = window.setInterval(() => {
       setActiveIllustration((current) => (current + 1) % illustrations.length);
-    }, 4000);
+    }, 6000);
 
     return () => window.clearInterval(slideshowTimer);
   }, []);
@@ -185,18 +185,19 @@ export default function IllustrationPanel() {
               sx={{
                 border: 0,
                 padding: 0,
-                width: 8,
-                height: 8,
                 borderRadius: "50%",
                 cursor: "pointer",
                 bgcolor: index === activeIllustration ? "#111111" : "#D3D3D3",
+                height: index === activeIllustration ? 8 : 8,
+                width: index === activeIllustration ? 20 : 8,
+                transition: "all 0.3s ease",
               }}
             />
           ))}
         </Stack>
-        <Typography variant="h6" fontWeight={700} textAlign="center">
+        <Typography variant="h5" fontWeight={500} textAlign="center">
           Make your work easier and organized
-          <br /> with <Box component="span">Tuga's App</Box>
+          <br /> with <Box component="span" sx={{ fontWeight: 700 }}>Tuga's App</Box>
         </Typography>
       </Stack>
       <LinearProgress sx={{ display: "none" }} />
