@@ -67,7 +67,7 @@ export default function IllustrationPanel() {
           width: 80,
           height: 80,
           borderRadius: "50%",
-          bgcolor: "#111111",
+          bgcolor: "#c7aeae",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
