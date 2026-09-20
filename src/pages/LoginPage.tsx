@@ -103,10 +103,10 @@ export default function LoginPage() {
             spacing={3}
           >
             <Box>
-              <Typography variant="h4" fontWeight={600} gutterBottom >
+              <Typography variant="h3" fontWeight={600} gutterBottom textAlign={{xs: "center", md: "center"}}>
                 Welcome back!
               </Typography>
-              <Typography variant="body2" color="text.secondary">
+              <Typography variant="body2" color="text.secondary" textAlign={{xs: "center", md: "center"}}>
                 Simplify your workflow and boost your productivity with
                 Tuga's App. Get started for free.
               </Typography>

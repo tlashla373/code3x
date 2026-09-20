@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Box, Stack, Typography, LinearProgress } from "@mui/material";
 
 const illustrations = [
-  { src: "/Meditation_01.svg", alt: "Person meditating" },
+  { src: "/Meditation_01.png", alt: "Person meditating" },
   { src: "/Yoga_02.svg", alt: "Person practicing yoga" },
   { src: "/Stability_03.svg", alt: "Person using a stability ball" },
 ];
@@ -86,7 +86,7 @@ export default function IllustrationPanel() {
       <Box
         sx={{
           width: "min(100%, 360px)",
-          height: 250,
+          height: 350,
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -112,7 +112,8 @@ export default function IllustrationPanel() {
           bottom: 180,
           left: 32,
           bgcolor: "#ffffff",
-          borderRadius: 2,
+          borderRadius: 3,
+          border: "1px solid #0f0f0f",
           p: 2,
           width: 200,
           boxShadow: "0 12px 28px rgba(0,0,0,0.08)",
